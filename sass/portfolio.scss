@@ -33,6 +33,7 @@ a {
     font-size: 1.4rem;
 }
 
+
 h1 > span:nth-of-type(1) {
     display: block;
     margin-left: 5%;
@@ -48,16 +49,13 @@ h1 + div {
     margin-right: 5%;
 }
 
-.links {
-    display: flex;
-    justify-content: space-evenly;
-    min-height: 100vh;
-    align-items: center;
-}
-
 .links > a {
     display: inline-block;
     color: black;
+}
+
+img {
+    object-fit: contain;
 }
 
 #skills li {
