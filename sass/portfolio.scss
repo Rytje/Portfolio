@@ -51,10 +51,34 @@ h1 + div {
     margin-right: 5%;
 }
 
-.links > a {
-    display: inline-block;
-    color: black;
-    // margin-top: 50vh;
+#list-example > a::before{
+    // content: "test";
+}
+
+#list-example > .list-group-item {
+    background-color: $secondary;
+    border: none;
+}
+
+#list-example > .list-group-item.active{
+    background-color: $secondary;
+}
+
+#list-example > .list-group-item.active::before{
+    // content: "O";
+    // margin-right: 5px;
+    // background-color: green;
+}
+
+.scroll-spy-links.active::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f521";
+    font-size: large;
+    margin-right: 5px;
+}
+
+button > a {
+    text-decoration: none;
+    color: white;
 }
 
 img {
@@ -71,10 +95,10 @@ img {
     width: 8%;
 }
 
-.active{
-    background-color: red;
-    // color: red;
-}
+// .active{
+//     background-color: red;
+//     // color: red;
+// }
 
 .carousel-control-prev:focus, .carousel-control-next:focus{
     background-color: $secondary;
