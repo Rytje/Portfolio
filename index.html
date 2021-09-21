@@ -16,6 +16,7 @@
 	<!-- <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/reset.css"> -->
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/portfolio.css">
 </head>
 
@@ -62,7 +63,9 @@
 			</nav>
 			<button class="btn-lg btn-dark d-block mt-5 p-0 mx-auto"><a class="d-block px-5 py-4"
 					href="assets/EN.NW.WD3_Ryno Tseng.pdf" download="Ryno Tseng Resume">Resume</a></button>
-			<div class="col-3 position-fixed bottom-0 start-0 d-flex justify-content-around">
+			<div class="col-3 position-fixed bottom-0 start-0 d-flex justify-content-evenly">
+				<a href="mailto:ryno.tseng@gmail.com" target="_blank" rel="noopener noreferrer"><i
+					class="fas fa-envelope fa-3x text-dark"></i></a>
 				<a href="https://github.com/Rytje" target="_blank" rel="noopener noreferrer"><i
 						class="fab fa-github fa-3x text-dark"></i></a>
 				<a href="https://www.linkedin.com/in/ryno-tseng/" target="_blank" rel="noopener noreferrer"><i
@@ -98,9 +101,9 @@
 
 			</section>
 
-			<section id="skills" class="row mx-5 mb-5 vh-100 ">
-				<h2 class="col-12 text-center text-sm-start align-self-end">Skills</h2>
-				<div class="col-sm-4 h-25">
+			<section id="skills" class="row mx-5 mb-5 vh-100">
+				<h2 class="col-12 text-center text-sm-start align-self-end" data-aos="fade-up">Skills</h2>
+				<div class="col-sm-4 h-25" data-aos="fade-up">
 					<h3 class="text-center mb-3">Languages</h3>
 					<ul class="list-group text-center mb-5 overflow-auto">
 						<li class="list-group-item">HTML</li>
@@ -111,7 +114,7 @@
 						<li class="list-group-item">PHP</li>
 					</ul>
 				</div>
-				<div class="col-sm-4 h-25">
+				<div class="col-sm-4 h-25" data-aos="fade-up">
 					<h3 class="text-center mb-3">Technologies</h3>
 					<ul class="list-group text-center mb-5 overflow-auto">
 						<li class="list-group-item">React</li>
@@ -121,7 +124,7 @@
 						<li class="list-group-item">Unity3D</li>
 					</ul>
 				</div>
-				<div class="col-sm-4 h-25">
+				<div class="col-sm-4 h-25" data-aos="fade-up">
 					<h3 class="text-center mb-3">Tools</h3>
 					<ul class="list-group text-center overflow-auto">
 						<li class="list-group-item">Git/GitHub/BitBucket</li>
@@ -135,8 +138,8 @@
 			</section>
 
 			<section id="projects" class="row d-flex flex-column justify-content-center mx-5 vh-100">
-				<h2 class="col-12 text-center text-sm-start">Projects</h2>
-				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<h2 class="col-12 text-center text-sm-start" data-aos="fade-up">Projects</h2>
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
 							class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -266,6 +269,10 @@
 		crossorigin="anonymous"></script> -->
 	<!-- <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
 	<script src="js/bootstrap.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	  </script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 
