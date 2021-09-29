@@ -131,6 +131,11 @@ footer {
 
 @media screen and (max-width: 575px){
     ul{
-        height: 20vh;
+        height: 22vh;
+    }
+
+    #project-desc{
+        max-height: 25vh;
+        overflow: auto;
     }
 }
