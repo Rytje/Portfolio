@@ -51,10 +51,6 @@ h1 + div {
     margin-right: 5%;
 }
 
-#list-example > a::before{
-    // content: "test";
-}
-
 #list-example > .list-group-item {
     background-color: $secondary;
     border: none;
@@ -62,12 +58,6 @@ h1 + div {
 
 #list-example > .list-group-item.active{
     background-color: $secondary;
-}
-
-#list-example > .list-group-item.active::before{
-    // content: "O";
-    // margin-right: 5px;
-    // background-color: green;
 }
 
 .scroll-spy-links.active::before{
@@ -85,8 +75,24 @@ img {
     object-fit: contain;
 }
 
+.resume{
+    background-color: #e06234;
+}
+
+.resume:hover{
+    background-color: #e0521e;
+}
+
+.resume a:hover{
+    color: white;
+}
+
+#introduction p{
+    font-size: 1.7rem;
+}
+
 #skills li {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .carousel-control-prev, .carousel-control-next{
