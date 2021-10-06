@@ -6,12 +6,13 @@
 /*******************************************/
 html {
     font-size: 62.5%;
-    // font-family: 'Kanit', sans-serif;
+    // font-family: 'Kanit', sans-serif !important;
 }
 
 body {
     background-color: #eeeeee;
     position: relative;
+    font-family: 'Kanit', sans-serif;
 }
 
 h1 {
@@ -112,6 +113,20 @@ img {
     width: 100%;
     height: 10%;
     filter: invert(1);
+}
+
+.carousel-inner, .carousel-caption {
+    border-radius: 10px;
+}
+
+.carousel-control-prev{
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
+}
+
+.carousel-control-next{
+    border-start-end-radius: 10px;
+    border-end-end-radius: 10px;
 }
 
 .carousel-caption{
