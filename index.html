@@ -16,6 +16,7 @@
 	<!-- <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/reset.css"> -->
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/portfolio.css">
 </head>
@@ -52,12 +53,14 @@
 		<!-- Small+ -->
 		<header class="d-none d-sm-block col-sm-3 bg-secondary position-fixed vh-100">
 			<nav>
-				<h1 class="pt-4 pt-md-5 ps-3 ps-md-5"><span class="d-block text-white">Ryno Tseng</span> <span class="d-block">Web Developer</span></h1>
+				<h1 class="pt-4 pt-md-5 ps-3 ps-md-5"><span class="d-block text-white">Ryno Tseng</span> <span
+						class="d-block">Web Developer</span></h1>
 
 				<div id="list-example" class="list-group mt-5 ms-0">
 					<a class="list-group-item list-group-item-action scroll-spy-links fs-3 ps-sm-3 ps-md-5"
 						href="#introduction">Introduction</a>
-					<a class="list-group-item list-group-item-action scroll-spy-links fs-3 ps-sm-3 ps-md-5" href="#skills">Skills</a>
+					<a class="list-group-item list-group-item-action scroll-spy-links fs-3 ps-sm-3 ps-md-5"
+						href="#skills">Skills</a>
 					<a class="list-group-item list-group-item-action scroll-spy-links fs-3 ps-sm-3 ps-md-5"
 						href="#projects">Projects</a>
 					<!-- <a class="list-group-item list-group-item-action scroll-spy-links" href="#education">Education</a> -->
@@ -92,16 +95,35 @@
 
 					<div class="col-12 col-sm-8 overflow-auto">
 						<p class="text-center fs-1">Hello!</p>
-						<p class="col text-center text-sm-start pe-sm-5">I'm <span class="fw-bold">Ryno Tseng</span>, a
+						<!-- Text for small screen -->
+						<p class="d-block d-sm-none col text-center text-sm-start pe-sm-5">I'm <span
+								class="fw-bold">Ryno Tseng</span>, a
 							front-end
 							developer with a "can
-							learn" attitude and a background in game development.
+							learn" attitude and a background in game development. Because of this I have an eye for
+							accessibility, usability and the skills to bring digital products to life and make them fun
+							to use.
 							Currently my focus is on creating websites with the react library.
+						</p>
+						<!-- Text for big screen -->
+						<p class="d-none d-sm-block col text-center text-sm-start pe-sm-5">I'm <span
+								class="fw-bold">Ryno Tseng</span>, a
+							front-end
+							developer with a "can
+							learn" attitude and a background in game development. Because of this I have an eye for
+							accessibility, usability and the skills to bring digital products to life and make them fun
+							to use.
+							Currently my focus is on creating websites with the react library.
+						<p class="d-none d-sm-block">A few topics that interest me at the moment are competetive Tekken
+							(鉄拳), Japanese culture,
+							retro (arcade) culture and religion.</p>
 						</p>
 					</div>
 					<img class="col-8 col-sm-4 img-fluid rounded-circle px-0 mx-auto"
 						src="assets/1632488084555square.jpg" alt="">
 				</div>
+
+				<div id="scroll-down-indicator" class="text-center position-relative"><i class="text-secondary fas fa-chevron-down fa-2x animate__animated animate__heartBeat animate__slower animate__infinite"></i></div>
 
 			</section>
 
@@ -149,7 +171,7 @@
 					</h2>
 					<div class="row">
 						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
-							data-aos="fade-up">
+							data-bs-interval=false data-aos="fade-up">
 							<div class="carousel-indicators">
 								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
 									class="active" aria-current="true" aria-label="Slide 1"></button>
